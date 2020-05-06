@@ -34,6 +34,7 @@
 		D444AAF72461AC21002737CB /* DZPOneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D444AAE72461AC21002737CB /* DZPOneView.xib */; };
 		D444AAFA2461AC9E002737CB /* hot_act.gif in Resources */ = {isa = PBXBuildFile; fileRef = D444AAF92461AC9E002737CB /* hot_act.gif */; };
 		D444AB012461B719002737CB /* ztlight.gif in Resources */ = {isa = PBXBuildFile; fileRef = D444AB002461B719002737CB /* ztlight.gif */; };
+		D444AB0A2462D678002737CB /* PieView.m in Sources */ = {isa = PBXBuildFile; fileRef = D444AB092462D678002737CB /* PieView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +80,8 @@
 		D444AAEA2461AC21002737CB /* DZPTwoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZPTwoTableViewCell.h; sourceTree = "<group>"; };
 		D444AAF92461AC9E002737CB /* hot_act.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hot_act.gif; sourceTree = "<group>"; };
 		D444AB002461B719002737CB /* ztlight.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ztlight.gif; sourceTree = "<group>"; };
+		D444AB082462D678002737CB /* PieView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieView.h; sourceTree = "<group>"; };
+		D444AB092462D678002737CB /* PieView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +190,8 @@
 				D444AAE42461AC21002737CB /* LYLuckyCardRotationView.xib */,
 				D444AAE32461AC21002737CB /* LYLuckyCardCellView.h */,
 				D444AADA2461AC20002737CB /* LYLuckyCardCellView.m */,
+				D444AB082462D678002737CB /* PieView.h */,
+				D444AB092462D678002737CB /* PieView.m */,
 				D444AADF2461AC21002737CB /* DZPOneView.h */,
 				D444AADB2461AC20002737CB /* DZPOneView.m */,
 				D444AAE72461AC21002737CB /* DZPOneView.xib */,
@@ -357,6 +362,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D444AB0A2462D678002737CB /* PieView.m in Sources */,
 				D444AAF42461AC21002737CB /* DZPTwoView.m in Sources */,
 				B314CF6F1E4C6339000FE3CE /* AppDelegate.m in Sources */,
 				D444AAEE2461AC21002737CB /* LYLuckyCardCellView.m in Sources */,
