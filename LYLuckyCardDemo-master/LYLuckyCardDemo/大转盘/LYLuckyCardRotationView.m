@@ -62,7 +62,7 @@
     self.cellArray = [NSMutableArray arrayWithCapacity:_dataArray.count];
     
     // 转盘添加扇形背景色
-    PieView *pieView = [[PieView alloc] initWithFrame:self.canRotationView.bounds count:dataArray.count];
+    PieView *pieView = [[PieView alloc] initWithFrame:self.canRotationView.bounds count:dataArray.count*2];
     [self.canRotationView addSubview:pieView];
     pieView.hidden = false;
     

@@ -39,6 +39,22 @@
                         "prizeName": "3",
                         "prizeType": "4",
                         "prizeAmount": "0"
+                    },
+                    {
+                        "prizeId": 4,
+                        "prizeIcon": "https://cdn01.mayihong.cn/upload/t028/customise/images/157976186360prizeIconNew.jpg?v=1579761863",
+                        "prizeIconName": "157976186360prizeIconNew",
+                        "prizeName": "2",
+                        "prizeType": "2",
+                        "prizeAmount": "20"
+                    },
+                    {
+                        "prizeId": 5,
+                        "prizeIcon": "https://cdn01.mayihong.cn/upload/t028/customise/images/157976179284prizeIconNew.jpg?v=1579761792",
+                        "prizeIconName": "157976179284prizeIconNew",
+                        "prizeName": "3",
+                        "prizeType": "4",
+                        "prizeAmount": "0"
                     }
                 ]
             },
