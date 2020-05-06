@@ -1,5 +1,3 @@
-# BigWheelCode
-大转盘
 最近公司要做转盘抽奖，看了些github 的代码，自己终于做出来了，现在总结下技术点，让以后有点记忆；
 
 总体结构：
@@ -36,4 +34,12 @@
 
 我用的是： [self.winView.layer removeAllAnimations];
 
+取角度：(count - I)/count
+
+iOS 饼状图（扇形图）动画效果的实现
+
+https://www.jianshu.com/p/e47adddc6308
+
 我还没找到可以单独关闭莫个动画的办法，如果有那个小伙伴发现了可以留言。
+
+https://github.com/shanyou2016/BigWheelCode
