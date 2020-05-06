@@ -1,0 +1,36 @@
+PODS:
+  - FLAnimatedImage (1.0.12)
+  - Masonry (1.1.0)
+  - MJExtension (3.2.1)
+  - SDWebImage (3.7.6):
+    - SDWebImage/Core (= 3.7.6)
+  - SDWebImage/Core (3.7.6)
+  - YYCategories (1.0.4):
+    - YYCategories/no-arc (= 1.0.4)
+  - YYCategories/no-arc (1.0.4)
+
+DEPENDENCIES:
+  - FLAnimatedImage (~> 1.0)
+  - Masonry
+  - MJExtension
+  - SDWebImage (~> 3.7.2)
+  - YYCategories
+
+SPEC REPOS:
+  trunk:
+    - FLAnimatedImage
+    - Masonry
+    - MJExtension
+    - SDWebImage
+    - YYCategories
+
+SPEC CHECKSUMS:
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJExtension: 635f2c663dcb1bf76fa4b715b2570a5710aec545
+  SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
+  YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
+
+PODFILE CHECKSUM: 60a5271008ac2e4f46e356aac72c255fb975abbc
+
+COCOAPODS: 1.8.4

@@ -1,0 +1,50 @@
+{
+    "code": 0,
+    "msg": "获取转盘活动数据成功",
+    "data": [
+        {
+            "id": "13",
+            "param": {
+                "buy": "1",
+                "buy_amount": 10,
+                "check_in_user_levels": "",
+                "content_turntable": [
+                    "1",
+                    "2",
+                    "3"
+                ],
+                "membergame": "",
+                "prize_time": 3,
+                "prizeArr": [
+                    {
+                        "prizeId": 0,
+                        "prizeIcon": "https://cdn01.mayihong.cn/upload/t028/customise/images/15797648546prizeIconNew.jpg?v=1579764854",
+                        "prizeIconName": "15797648546prizeIconNew",
+                        "prizeName": "1",
+                        "prizeType": "1",
+                        "prizeAmount": "10" 
+                    },
+                    {
+                        "prizeId": 1,
+                        "prizeIcon": "https://cdn01.mayihong.cn/upload/t028/customise/images/157976186360prizeIconNew.jpg?v=1579761863",
+                        "prizeIconName": "157976186360prizeIconNew",
+                        "prizeName": "2",
+                        "prizeType": "2",
+                        "prizeAmount": "20"
+                    },
+                    {
+                        "prizeId": 2,
+                        "prizeIcon": "https://cdn01.mayihong.cn/upload/t028/customise/images/157976179284prizeIconNew.jpg?v=1579761792",
+                        "prizeIconName": "157976179284prizeIconNew",
+                        "prizeName": "3",
+                        "prizeType": "4",
+                        "prizeAmount": "0"
+                    }
+                ]
+            },
+            "type": "turntable",
+            "start": "2020-01-23 00:00:00",
+            "end": "2021-01-23 23:59:59"
+        }
+    ]
+}

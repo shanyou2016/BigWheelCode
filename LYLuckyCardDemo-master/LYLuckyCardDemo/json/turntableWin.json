@@ -1,0 +1,16 @@
+{
+    "code": 0,
+    "msg": "转盘抽奖成功",
+    "data": {
+        "prizeId": 2,
+        "prizeIcon": "https://cdn01.asqmena.com/upload/t028/customise/images/157976179284prizeIconNew.jpg?v=1579761792",
+        "prizeIconName": "157976179284prizeIconNew",
+        "prizeName": "3",
+        "prizeType": "4",
+        "prizeAmount": "0",
+        "prizeMsg": "中奖",
+        "prizeflag": 1,
+        "integralOld": 3708,
+        "integral": 3708
+    }
+}
