@@ -41,7 +41,7 @@
                         <constraint firstAttribute="height" constant="74" id="Bed-jJ-r6f"/>
                     </constraints>
                     <connections>
-                        <action selector="close:" destination="iN0-l3-epB" eventType="touchUpInside" id="uSO-nl-jYO"/>
+                        <action selector="close:" destination="iN0-l3-epB" eventType="touchUpInside" id="V0Y-tb-uUw"/>
                     </connections>
                 </button>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ztlight.gif" translatesAutoresizingMaskIntoConstraints="NO" id="vLm-VA-79D" customClass="FLAnimatedImageView">

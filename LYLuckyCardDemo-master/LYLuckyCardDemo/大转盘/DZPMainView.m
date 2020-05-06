@@ -119,7 +119,7 @@
 
 - (void)hiddenSelf {
 
-//    [view.superview removeFromSuperview];
+    [self.superview removeFromSuperview];
     [self  removeFromSuperview];
 }
 
