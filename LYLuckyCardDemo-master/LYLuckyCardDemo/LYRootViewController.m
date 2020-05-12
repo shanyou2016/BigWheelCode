@@ -10,7 +10,7 @@
 #import "DZPMainView.h"
 #import "Masonry.h"
 #import "CMCommon.h"
-
+ #import <SGBrowserView.h>
 @interface LYRootViewController ()
 @property (nonatomic, strong) NSArray <DZPModel *> *dzpArray;   /**<   转盘活动数据 */
 @end
@@ -37,11 +37,12 @@
 
             
             DZPMainView *recordVC = [[DZPMainView alloc] initWithFrame:CGRectZero];
-            [self.view addSubview:recordVC];
-            [recordVC mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.edges.equalTo(self.view);
-            }];
-            
+//            [self.view addSubview:recordVC];
+//            [recordVC mas_makeConstraints:^(MASConstraintMaker *make) {
+//                make.edges.equalTo(self.view);
+//            }];
+              CGPoint showCenter = CGPointMake([ [UIScreen mainScreen] bounds].size.width/2,[ [UIScreen mainScreen] bounds].size.height/2);
+            [SGBrowserView showMoveView:recordVC moveToCenter:showCenter];
             //                        recordVC.dataArray = [DZPprizeModel mj_objectArrayWithKeyValuesArray:obj.param.prizeArr];
             recordVC.item = obj;
     }

@@ -17,7 +17,7 @@
 #import "CMCommon.h"
 #import "UIImageView+WebCache.h"
 #import "UIView+YYAdd.h"
-
+#import "SGBrowserView.h"
 @interface DZPMainView ()
 
 @property (weak, nonatomic) IBOutlet FLAnimatedImageView *imgGif;//转盘头部gif
@@ -119,8 +119,10 @@
 
 - (void)hiddenSelf {
 
-    [self.superview removeFromSuperview];
-    [self  removeFromSuperview];
+//    [self.superview removeFromSuperview];
+//    [self  removeFromSuperview];
+    
+      [SGBrowserView hide];
 }
 
 - (IBAction)close:(id)sender {

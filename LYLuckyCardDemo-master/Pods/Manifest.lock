@@ -5,6 +5,7 @@ PODS:
   - SDWebImage (3.7.6):
     - SDWebImage/Core (= 3.7.6)
   - SDWebImage/Core (3.7.6)
+  - SGBrowserView (1.0.0)
   - YYCategories (1.0.4):
     - YYCategories/no-arc (= 1.0.4)
   - YYCategories/no-arc (1.0.4)
@@ -14,6 +15,7 @@ DEPENDENCIES:
   - Masonry
   - MJExtension
   - SDWebImage (~> 3.7.2)
+  - SGBrowserView
   - YYCategories
 
 SPEC REPOS:
@@ -22,6 +24,7 @@ SPEC REPOS:
     - Masonry
     - MJExtension
     - SDWebImage
+    - SGBrowserView
     - YYCategories
 
 SPEC CHECKSUMS:
@@ -29,8 +32,9 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 635f2c663dcb1bf76fa4b715b2570a5710aec545
   SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
+  SGBrowserView: d18d7386048a12bb11608d86f3682a5b08757fe6
   YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
 
-PODFILE CHECKSUM: 60a5271008ac2e4f46e356aac72c255fb975abbc
+PODFILE CHECKSUM: 2441a9b9be9acbd490186e2a9361f3af0a4ed6d7
 
 COCOAPODS: 1.8.4

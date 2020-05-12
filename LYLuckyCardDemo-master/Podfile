@@ -13,4 +13,5 @@ pod 'MJExtension'      			 # 字典转数据模型库
 pod'FLAnimatedImage','~> 1.0'            # 高效 GIF加载引擎
 pod 'SDWebImage', '~> 3.7.2'             # 高效 图片加载引擎
 pod 'YYCategories'      		 # Category 类型工具库（YYKit 组件之一）
+pod 'SGBrowserView'            		 # 弹窗或隐藏
 end

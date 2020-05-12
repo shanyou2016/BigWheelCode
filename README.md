@@ -40,6 +40,12 @@ iOS 饼状图（扇形图）动画效果的实现
 
 https://www.jianshu.com/p/e47adddc6308
 
+View的初始frame, 弹出隐藏
+
+https://github.com/Shanguo/SGBrowserView
+
+发现实际开发中，弹窗方式有问题，用到了上面的代码，非常感谢这位码农。
+
 我还没找到可以单独关闭莫个动画的办法，如果有那个小伙伴发现了可以留言。
 
 https://github.com/shanyou2016/BigWheelCode
