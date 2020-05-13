@@ -10,6 +10,9 @@
 #import "DZPTwoTableViewCell.h"
 #import "Masonry.h"
 #import "CMCommon.h"
+
+#define RGBA(_R,_G,_B,_A) \
+[UIColor colorWithRed:((_R) / 255.0) green:((_G) / 255.0) blue:((_B) / 255.0) alpha:_A]
 @interface DZPTwoView ()<UITableViewDelegate,UITableViewDataSource>
 
 
@@ -58,7 +61,7 @@
     _tableView.estimatedRowHeight = 0;
     _tableView.estimatedSectionHeaderHeight = 0;
     _tableView.estimatedSectionFooterHeight = 0;
-    _tableView.rowHeight = 50;
+    _tableView.rowHeight = 25;
     
     return _tableView;
 }
@@ -80,13 +83,18 @@
     cell.rowLB.text = [NSString stringWithFormat:@"%ld",indexPath.row+1];
     cell.numberLB.text = model.codeNum;
     cell.recordLB.text = model.prize_name;
+    if ((indexPath.row+1)%2 ==0) {
+        cell.backgroundColor = RGBA(80, 40, 130, 0.8);
+    } else {
+        cell.backgroundColor = [UIColor clearColor];
+    }
     return cell;
     
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    return  40.0;
+    return  25.0;
 }
 
 
@@ -96,7 +104,8 @@
 }
 
 -(void)setDataArray:(NSArray<DZPModel *> *)dataArray{
-    _dataArray = dataArray;
+    NSMutableArray *temp = [[NSMutableArray alloc] initWithArray:dataArray];
+    _dataArray =  (NSMutableArray *)[[temp reverseObjectEnumerator] allObjects];
     [_tableView reloadData];
 }
 @end

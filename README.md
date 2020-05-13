@@ -36,15 +36,43 @@
 
 取角度：(count - I)/count
 
+其他做大转盘用的的知识和参考：
+
 iOS 饼状图（扇形图）动画效果的实现
 
 https://www.jianshu.com/p/e47adddc6308
+
+其他网上大转盘开发思路
+
+https://www.jianshu.com/p/4056faba6019
 
 View的初始frame, 弹出隐藏
 
 https://github.com/Shanguo/SGBrowserView
 
 发现实际开发中，弹窗方式有问题，用到了上面的代码，非常感谢这位码农。
+
+iOS 判断奇偶数
+
+https://www.cnblogs.com/liuting-1204/p/5946366.html
+
+iOS数组排序(倒叙 生序 降序)
+
+https://www.jianshu.com/p/e9d561140f5b
+
+实际开发中大转盘调用方式；
+
+#define UGScreenW [UIScreen mainScreen].bounds.size.width
+
+#define UGScerrnH [UIScreen mainScreen].bounds.size.height
+
+// About __block
+
+#define __weakSelf_(__self) __weak typeof(self) __self = self
+
+#define RGBA(_R,_G,_B,_A) \
+
+[UIColor colorWithRed:((_R) /255.0) green:((_G) /255.0) blue:((_B) /255.0) alpha:_A]
 
 我还没找到可以单独关闭莫个动画的办法，如果有那个小伙伴发现了可以留言。
 

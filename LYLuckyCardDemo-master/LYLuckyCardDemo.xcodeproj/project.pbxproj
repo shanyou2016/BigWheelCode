@@ -35,6 +35,8 @@
 		D444AAFA2461AC9E002737CB /* hot_act.gif in Resources */ = {isa = PBXBuildFile; fileRef = D444AAF92461AC9E002737CB /* hot_act.gif */; };
 		D444AB012461B719002737CB /* ztlight.gif in Resources */ = {isa = PBXBuildFile; fileRef = D444AB002461B719002737CB /* ztlight.gif */; };
 		D444AB0A2462D678002737CB /* PieView.m in Sources */ = {isa = PBXBuildFile; fileRef = D444AB092462D678002737CB /* PieView.m */; };
+		D4ACBF4E246BB5CA005AB971 /* UGredEnvelopeView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4ACBF4B246BB5CA005AB971 /* UGredEnvelopeView.m */; };
+		D4ACBF4F246BB5CA005AB971 /* UGredEnvelopeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4ACBF4C246BB5CA005AB971 /* UGredEnvelopeView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +84,9 @@
 		D444AB002461B719002737CB /* ztlight.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ztlight.gif; sourceTree = "<group>"; };
 		D444AB082462D678002737CB /* PieView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieView.h; sourceTree = "<group>"; };
 		D444AB092462D678002737CB /* PieView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieView.m; sourceTree = "<group>"; };
+		D4ACBF4B246BB5CA005AB971 /* UGredEnvelopeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UGredEnvelopeView.m; sourceTree = "<group>"; };
+		D4ACBF4C246BB5CA005AB971 /* UGredEnvelopeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UGredEnvelopeView.xib; sourceTree = "<group>"; };
+		D4ACBF4D246BB5CA005AB971 /* UGredEnvelopeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UGredEnvelopeView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +139,7 @@
 		B314CF691E4C6339000FE3CE /* LYLuckyCardDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D4ACBF4A246BB5AE005AB971 /* 红包弹框 */,
 				D444AAC92461A768002737CB /* Helper */,
 				D444AAC22461A5E7002737CB /* json */,
 				D444AAD22461A885002737CB /* 大转盘 */,
@@ -226,6 +232,16 @@
 			name = git;
 			sourceTree = "<group>";
 		};
+		D4ACBF4A246BB5AE005AB971 /* 红包弹框 */ = {
+			isa = PBXGroup;
+			children = (
+				D4ACBF4D246BB5CA005AB971 /* UGredEnvelopeView.h */,
+				D4ACBF4B246BB5CA005AB971 /* UGredEnvelopeView.m */,
+				D4ACBF4C246BB5CA005AB971 /* UGredEnvelopeView.xib */,
+			);
+			path = "红包弹框";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -287,6 +303,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4ACBF4F246BB5CA005AB971 /* UGredEnvelopeView.xib in Resources */,
 				D444AAF22461AC21002737CB /* DZPMainView.xib in Resources */,
 				D444AAFA2461AC9E002737CB /* hot_act.gif in Resources */,
 				D444AAC62461A6B1002737CB /* turntableLog.json in Resources */,
@@ -372,6 +389,7 @@
 				B314CF6C1E4C6339000FE3CE /* main.m in Sources */,
 				D444AAD12461A816002737CB /* LYRootViewController.m in Sources */,
 				D444AAF32461AC21002737CB /* DZPTwoTableViewCell.m in Sources */,
+				D4ACBF4E246BB5CA005AB971 /* UGredEnvelopeView.m in Sources */,
 				D444AAEC2461AC21002737CB /* DZPOneTableViewCell.m in Sources */,
 				D444AAD62461AB66002737CB /* DZPModel.m in Sources */,
 				D444AAF12461AC21002737CB /* DZPMainView.m in Sources */,
