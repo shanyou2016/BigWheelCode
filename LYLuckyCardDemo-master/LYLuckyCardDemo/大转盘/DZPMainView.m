@@ -61,10 +61,14 @@
 
 - (instancetype)DZPMainView {
 
-    NSArray *objs= [[UINib nibWithNibName:NSStringFromClass([self class]) bundle:nil] instantiateWithOwner:self options:nil];
+    //这个在实际开发中发现坐标不对
+//    NSArray *objs= [[UINib nibWithNibName:NSStringFromClass([self class]) bundle:nil] instantiateWithOwner:self options:nil];
     // 按屏幕比例缩放（因为等比例约束太复杂，所以直接缩放得了）
 //    CGFloat scale = APP.Width/414;
 //    self.transform = CGAffineTransformMakeScale(scale, scale);
+    
+    NSBundle *bundle=[NSBundle mainBundle];
+    NSArray *objs=[bundle loadNibNamed:@"DZPMainView" owner:nil options:nil];
     return [objs firstObject];
 }
 

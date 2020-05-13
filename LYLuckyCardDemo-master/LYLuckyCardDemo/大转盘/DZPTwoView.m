@@ -104,8 +104,11 @@
 }
 
 -(void)setDataArray:(NSArray<DZPModel *> *)dataArray{
-    NSMutableArray *temp = [[NSMutableArray alloc] initWithArray:dataArray];
-    _dataArray =  (NSMutableArray *)[[temp reverseObjectEnumerator] allObjects];
-    [_tableView reloadData];
+        NSMutableArray *temp = [[NSMutableArray alloc] initWithArray:dataArray];
+        // 排序key, 某个对象的属性名称，是否升序, YES-升序, NO-降序
+        NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"codeNum" ascending:NO];
+    //    _dataArray =  (NSMutableArray *)[[temp reverseObjectEnumerator] allObjects];
+         _dataArray =  [temp sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
+        [_tableView reloadData];
 }
 @end
