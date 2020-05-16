@@ -37,6 +37,7 @@
 		D444AB0A2462D678002737CB /* PieView.m in Sources */ = {isa = PBXBuildFile; fileRef = D444AB092462D678002737CB /* PieView.m */; };
 		D4ACBF4E246BB5CA005AB971 /* UGredEnvelopeView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4ACBF4B246BB5CA005AB971 /* UGredEnvelopeView.m */; };
 		D4ACBF4F246BB5CA005AB971 /* UGredEnvelopeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4ACBF4C246BB5CA005AB971 /* UGredEnvelopeView.xib */; };
+		D4ACC03E24700C64005AB971 /* Global.m in Sources */ = {isa = PBXBuildFile; fileRef = D4ACC03C24700C63005AB971 /* Global.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +88,8 @@
 		D4ACBF4B246BB5CA005AB971 /* UGredEnvelopeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UGredEnvelopeView.m; sourceTree = "<group>"; };
 		D4ACBF4C246BB5CA005AB971 /* UGredEnvelopeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UGredEnvelopeView.xib; sourceTree = "<group>"; };
 		D4ACBF4D246BB5CA005AB971 /* UGredEnvelopeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UGredEnvelopeView.h; sourceTree = "<group>"; };
+		D4ACC03C24700C63005AB971 /* Global.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Global.m; sourceTree = "<group>"; };
+		D4ACC03D24700C64005AB971 /* Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +181,8 @@
 		D444AAC92461A768002737CB /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				D4ACC03D24700C64005AB971 /* Global.h */,
+				D4ACC03C24700C63005AB971 /* Global.m */,
 				D444AACA2461A781002737CB /* CMCommon.h */,
 				D444AACB2461A781002737CB /* CMCommon.m */,
 			);
@@ -393,6 +398,7 @@
 				D444AAEC2461AC21002737CB /* DZPOneTableViewCell.m in Sources */,
 				D444AAD62461AB66002737CB /* DZPModel.m in Sources */,
 				D444AAF12461AC21002737CB /* DZPMainView.m in Sources */,
+				D4ACC03E24700C64005AB971 /* Global.m in Sources */,
 				D444AAF62461AC21002737CB /* LYLuckyCardRotationView.m in Sources */,
 				D444AACC2461A781002737CB /* CMCommon.m in Sources */,
 			);

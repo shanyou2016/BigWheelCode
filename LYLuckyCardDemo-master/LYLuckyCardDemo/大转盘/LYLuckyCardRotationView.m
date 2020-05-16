@@ -13,6 +13,7 @@
 #import "Masonry.h"
 #import "CMCommon.h"
 #import "PieView.h"
+#import "Global.h"
 #define kLuckyCardCellViewSize CGSizeMake(68, 173) //每个小格子大小
 
 @interface LYLuckyCardRotationView () <CAAnimationDelegate>
@@ -40,12 +41,12 @@
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
     if (self) {
-        [self commonInit];
+        [self commonInit];//这里以后可以优化下，感觉约束没起作用跟这有关系
     }
     return self;
 }
 
-- (void)commonInit {
+- (void)commonInit {//这里以后可以优化下，感觉约束没起作用跟这有关系
     [[UINib nibWithNibName:NSStringFromClass([self class]) bundle:nil] instantiateWithOwner:self options:nil];
     [self addSubview:_contentView];
     [_contentView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -188,10 +189,7 @@
         else{
             self.zjImgV.image = [UIImage imageNamed:@"dzp_failure"];
         }
-         NSNumber * integral = [data objectForKey:@"integral"];
-        //发送通知
-        NSDictionary *dict = @{@"MoenyNumber":integral};
-        [[NSNotificationCenter defaultCenter] postNotification:[NSNotification notificationWithName:@"setMoenyNumber" object:nil userInfo:dict]];
+
 
     }
 }
@@ -233,17 +231,33 @@
     
 }
 
--(void)winner{
 
-    [self.winView.layer removeAllAnimations];
+-(void)removeAnimations{
+      [self winner];
+     [self.canRotationView.layer removeAllAnimations];
+}
+
+-(void)winner{
+     [self fireNotification];
+    _myBtn.enabled = YES;
+     [self.winView.layer removeAllAnimations];
+
+    
     self.bgView.hidden = YES;
     [self.winView setHidden:YES];
     self.jpLB.hidden = YES;
     self.jpImgV.hidden = YES;
     self.zjImgV.hidden = YES;
-    _myBtn.enabled = YES;
     
     
+}
+
+-(void)fireNotification{
+    //发送通知
+    NSNumber * integral = [data objectForKey:@"integral"];
+    NSDictionary *dict = @{@"MoenyNumber":integral};
+    [[NSNotificationCenter defaultCenter] postNotification:[NSNotification notificationWithName:@"setMoenyNumber" object:nil userInfo:dict]];
+  
 }
 #pragma mark -网络请求  抽奖接口
 
@@ -279,13 +293,9 @@
         [self animationWinning];
     }
     
+    //===实际开发中有网络请求不到的情况，或者网络失败==》调用[self removeAnimations];
+    
     
 }
 
--(void)removeAnimations{
-    self.myBtn.enabled = YES;
-    [self winner];
-     [self.winView.layer removeAllAnimations];
-     [self.canRotationView.layer removeAllAnimations];
-}
 @end
