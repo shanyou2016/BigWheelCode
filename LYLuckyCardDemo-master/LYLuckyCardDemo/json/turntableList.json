@@ -20,7 +20,7 @@
                         "prizeId": 0,
                         "prizeIcon": "https://cdn01.mayihong.cn/upload/t028/customise/images/15797648546prizeIconNew.jpg?v=1579764854",
                         "prizeIconName": "15797648546prizeIconNew",
-                        "prizeName": "1",
+                        "prizeName": "1我爱你暗示法所发生的发",
                         "prizeType": "1",
                         "prizeAmount": "10" 
                     },
@@ -55,7 +55,39 @@
                         "prizeName": "3",
                         "prizeType": "4",
                         "prizeAmount": "0"
-                    }
+                    },
+                    {
+                        "prizeId": 6,
+                        "prizeIcon": "https://cdn01.mayihong.cn/upload/t028/customise/images/15797648546prizeIconNew.jpg?v=1579764854",
+                        "prizeIconName": "15797648546prizeIconNew",
+                        "prizeName": "1我爱你暗示法所发生的111发",
+                        "prizeType": "1",
+                        "prizeAmount": "10"
+                    },
+                    {
+                        "prizeId": 7,
+                        "prizeIcon": "https://cdn01.mayihong.cn/upload/t028/customise/images/15797648546prizeIconNew.jpg?v=1579764854",
+                        "prizeIconName": "15797648546prizeIconNew",
+                        "prizeName": "1我爱你暗示法所发生的发2222",
+                        "prizeType": "1",
+                        "prizeAmount": "10"
+                    },
+                    {
+                        "prizeId": 8,
+                        "prizeIcon": "https://cdn01.mayihong.cn/upload/t028/customise/images/15797648546prizeIconNew.jpg?v=1579764854",
+                        "prizeIconName": "15797648546prizeIconNew",
+                        "prizeName": "1我爱你暗示法所发生的111发",
+                        "prizeType": "1",
+                        "prizeAmount": "10"
+                    },
+                    {
+                        "prizeId": 9,
+                        "prizeIcon": "https://cdn01.mayihong.cn/upload/t028/customise/images/15797648546prizeIconNew.jpg?v=1579764854",
+                        "prizeIconName": "15797648546prizeIconNew",
+                        "prizeName": "1我爱你暗示法所发生的发2222",
+                        "prizeType": "1",
+                        "prizeAmount": "10"
+                    },
                 ]
             },
             "type": "turntable",

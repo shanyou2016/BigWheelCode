@@ -60,10 +60,22 @@
 
 -(void)setDataArray:(NSArray<DZPprizeModel *> *)dataArray{
     _dataArray = dataArray;
-    self.cellArray = [NSMutableArray arrayWithCapacity:_dataArray.count];
+    self.cellArray = [NSMutableArray arrayWithCapacity:_dataArray.count+1];
+
+//    int count ;
+//    if (dataArray.count%2==0) {//如果是偶数
+//        
+//        count = (int)dataArray.count;
+//        
+//    }
+//    else{//如果是奇数
+//      
+//         count = (int) dataArray.count + 1;
+//    }
+    
     
     // 转盘添加扇形背景色
-    PieView *pieView = [[PieView alloc] initWithFrame:self.canRotationView.bounds count:dataArray.count*2];
+    PieView *pieView = [[PieView alloc] initWithFrame:self.canRotationView.bounds count:dataArray.count];
     [self.canRotationView addSubview:pieView];
     pieView.hidden = false;
     
@@ -115,6 +127,8 @@
     animationPart1.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn]; //由慢变快
     animationPart1.fillMode = kCAFillModeForwards;
     [self.canRotationView.layer addAnimation:animationPart1 forKey:@"beginAnima"];
+    
+    [self fireStartNotification];
 }
 //动画方法
 - (void)animationPart :(float )angle{
@@ -204,6 +218,7 @@
       
         if (self.angle != -1) {
              [self animationWinning];
+            [self fireEndNotification];
         }
         else{
             [self removeAnimations];
@@ -235,6 +250,7 @@
 -(void)removeAnimations{
       [self winner];
      [self.canRotationView.layer removeAllAnimations];
+    [self fireEndNotification];
 }
 
 -(void)winner{
@@ -257,6 +273,20 @@
     NSNumber * integral = [data objectForKey:@"integral"];
     NSDictionary *dict = @{@"MoenyNumber":integral};
     [[NSNotificationCenter defaultCenter] postNotification:[NSNotification notificationWithName:@"setMoenyNumber" object:nil userInfo:dict]];
+  
+}
+
+-(void)fireStartNotification{
+    //发送通知
+
+    [[NSNotificationCenter defaultCenter] postNotification:[NSNotification notificationWithName:@"setDZPStar" object:nil userInfo:nil]];
+  
+}
+
+-(void)fireEndNotification{
+    //发送通知
+
+    [[NSNotificationCenter defaultCenter] postNotification:[NSNotification notificationWithName:@"setDZPEnd" object:nil userInfo:nil]];
   
 }
 #pragma mark -网络请求  抽奖接口
