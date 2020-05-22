@@ -38,6 +38,7 @@
 		D4ACBF4E246BB5CA005AB971 /* UGredEnvelopeView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4ACBF4B246BB5CA005AB971 /* UGredEnvelopeView.m */; };
 		D4ACBF4F246BB5CA005AB971 /* UGredEnvelopeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4ACBF4C246BB5CA005AB971 /* UGredEnvelopeView.xib */; };
 		D4ACC03E24700C64005AB971 /* Global.m in Sources */ = {isa = PBXBuildFile; fileRef = D4ACC03C24700C63005AB971 /* Global.m */; };
+		D4FBD6E624781152008CD488 /* ztlight2.gif in Resources */ = {isa = PBXBuildFile; fileRef = D4FBD6E524781151008CD488 /* ztlight2.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +91,7 @@
 		D4ACBF4D246BB5CA005AB971 /* UGredEnvelopeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UGredEnvelopeView.h; sourceTree = "<group>"; };
 		D4ACC03C24700C63005AB971 /* Global.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Global.m; sourceTree = "<group>"; };
 		D4ACC03D24700C64005AB971 /* Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
+		D4FBD6E524781151008CD488 /* ztlight2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ztlight2.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +233,7 @@
 		D444AAF82461AC87002737CB /* git */ = {
 			isa = PBXGroup;
 			children = (
+				D4FBD6E524781151008CD488 /* ztlight2.gif */,
 				D444AB002461B719002737CB /* ztlight.gif */,
 				D444AAF92461AC9E002737CB /* hot_act.gif */,
 			);
@@ -316,6 +319,7 @@
 				B314CF7A1E4C6339000FE3CE /* LaunchScreen.storyboard in Resources */,
 				D444AAF52461AC21002737CB /* LYLuckyCardRotationView.xib in Resources */,
 				D444AAED2461AC21002737CB /* DZPOneTableViewCell.xib in Resources */,
+				D4FBD6E624781152008CD488 /* ztlight2.gif in Resources */,
 				B314CF771E4C6339000FE3CE /* Assets.xcassets in Resources */,
 				D444AAD02461A816002737CB /* LYRootViewController.xib in Resources */,
 				D444AAF02461AC21002737CB /* DZPTwoTableViewCell.xib in Resources */,
